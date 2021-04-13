@@ -66,12 +66,12 @@ let rates = {
     CAD: {
         USD: 0.80
     },
-    AUD: {
-        CAD: 0.96
-    },
-    CAD: {
-        AUD: 1.04
-    },
+    //AUD: {
+        //CAD: 0.96
+    //},
+    //CAD: {
+        //AUD: 1.04
+    //},
 };
 
 console.log('The rates are:', rates);
@@ -85,7 +85,23 @@ console.log('The rates are:', rates);
 // If the user supplies an invalid initial or target currency, display a meaningful
 // warning message and exit the program.
 
+//need to access rates value
+//extract variable and use as key
 
+let rateTableForInitialCurrency = rates[initialCurrency];
+
+if (rateTableForInitialCurrency === undefined) {
+    console.error(`Whoops initial currency must be valid. Initial currency received is ${initialCurrency}`);
+    process.exit();
+}
+
+//make sure target currency is alsso valid
+let rateTableForFinalCurrency = rates[finalCurrency];
+
+if (rateTableForFinalCurrency === undefined) {
+    console.error(`Whoops final currency must be valid. Final currency received is ${finalCurrency}`);
+    process.exit();
+}
 
 // --------------------------------------------------
 // Step 5: Perform conversion
@@ -95,7 +111,9 @@ console.log('The rates are:', rates);
 
 // Now we will compute the rate, apply it to the amount, and capture the result.
 
-
+function conversionRate() {
+    return amount * rates[initialCurrency][finalCurrency];
+}
 
 // --------------------------------------------------
 // Step 6: Display results
