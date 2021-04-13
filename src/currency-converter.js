@@ -30,6 +30,20 @@ console.log(`The final currency is ${finalCurrency}`);
 
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
+if (amount === undefined) {
+    console.error(`Whoops, you must provide a proper amount`);
+    process.exit(); // calling a process method exit
+}
+
+if (initialCurrency === undefined) {
+    console.error(`Whoops, you must provide a proper initial currency`);
+    process.exit();
+}
+
+if (finalCurrency === undefined) {
+    console.error(`Whoops, you must provide a proper final currency`);
+    process.exit();
+}
 
 // --------------------------------------------------
 // Step 3: Define currency conversion rates
