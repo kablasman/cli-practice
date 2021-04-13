@@ -119,6 +119,7 @@ function conversionRate() {
 // Step 6: Display results
 // --------------------------------------------------
 // Finally we will display the result as part of a meaningful message.
+console.log(`${amount} in ${initialCurrency} is equal to ${conversionRate()} ${finalCurrency}`);
 
 // This message should also include the original amount and currency information
 // supplied by the user.
