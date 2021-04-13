@@ -56,7 +56,7 @@ As usual, you are free to approach this exercise however you see fit. If you wou
 - Define and implement a series of tests to ensure that each function works as expected.
 
 ## Resources
-
+https://stackabuse.com/command-line-arguments-in-node-js/
 ### Node
 - Download: https://nodejs.org/en/
 - Accessing command line arguments: https://nodejs.dev/learn/nodejs-accept-arguments-from-the-command-line
