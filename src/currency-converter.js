@@ -15,7 +15,13 @@
 
 // We will store each piece of information in a dedicated variable for later use.
 
+let amount = process.argv[2];
+let initialCurrency = process.argv[3];
+let finalCurrency = process.argv[4];
 
+console.log(`The amount is ${amount}`);
+console.log(`The initial currency is ${initialCurrency}`);
+console.log(`The final currency is ${finalCurrency}`);
 
 // --------------------------------------------------
 // Step 2: Validate user input
@@ -24,8 +30,6 @@
 
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
-
-
 
 // --------------------------------------------------
 // Step 3: Define currency conversion rates
@@ -39,7 +43,7 @@
 // The conversion rates do not have to be accurate, athough this resource contains
 // up-to-date rate information: https://www.xe.com/
 
-
+// define object
 
 // --------------------------------------------------
 // Step 4: Ensure that a conversion rate exists
