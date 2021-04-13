@@ -59,6 +59,23 @@ if (finalCurrency === undefined) {
 
 // define object
 
+let rates = {
+    USD: {
+        CAD: 1.25
+    },
+    CAD: {
+        USD: 0.80
+    },
+    AUD: {
+        CAD: 0.96
+    },
+    CAD: {
+        AUD: 1.04
+    },
+};
+
+console.log('The rates are:', rates);
+
 // --------------------------------------------------
 // Step 4: Ensure that a conversion rate exists
 // --------------------------------------------------
